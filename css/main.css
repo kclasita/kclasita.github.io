@@ -1,0 +1,92 @@
+/*Body*/
+
+body{
+  background-color: #ededed;
+  font-family: 'AzbukaStd-Light'; 
+}
+
+.landing{
+  margin: 60px 0;
+}
+
+
+h1{
+  font-size: 4em;
+  line-height: 1.3em;
+  color:#4e606a;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+h2{
+  color: #fff;
+  background-color: #e3a3a4;
+  border: 10px solid #bf8e90;
+  max-width: 125px;
+  height: 122px;
+  padding-top: 28px;
+  text-align: center;
+  margin: auto;
+}
+
+strong{
+  font-family: "AzbukaStd-Medium";
+  color: #e3a3a4;
+}
+
+a{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  background-color:#e3a3a4;
+  line-height:2.5;
+  padding: 10px 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover{
+  color: #fff;
+  background-color: #bf8e90;
+  padding: 10px 20px;
+}
+
+ul{
+  text-align: center;
+  padding: 0;
+}
+li{
+  color: #fff;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/*// Highlight*/
+::selection {
+  background: #e3a3a4; /* Safari */
+  }
+::-moz-selection {
+  background: #e3a3a4; /* Firefox */
+}
+
+@media only screen and (max-width: 768px){
+  .landing{
+    margin: 30px 0;
+  }
+  h1{
+    font-size: 3em;
+  }
+  li{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+  a{
+    display: block;
+  }
+}
