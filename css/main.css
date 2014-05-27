@@ -2,7 +2,7 @@
 
 body{
   background-color: #ededed;
-  font-family: 'AzbukaStd-Light'; 
+  font-family: 'AzbukaStd-Light';
 }
 
 .landing{
@@ -11,17 +11,15 @@ body{
 
 
 h1{
-  font-size: 4em;
-  line-height: 1.3em;
+  font-size: 1.5em;
+  line-height: 2.2em;
   color:#4e606a;
-  text-transform: uppercase;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 5px;
 }
 
 h2{
-  color: #fff;
-  background-color: #e3a3a4;
+  color: #4e606a;
   border: 10px solid #bf8e90;
   max-width: 125px;
   height: 122px;
@@ -36,10 +34,10 @@ strong{
 }
 
 a{
-  color: #fff;
-  font-size: 20px;
+  color: #bf8e90;
+  font-size: 14px;
   text-decoration: none;
-  background-color:#e3a3a4;
+  background-color:#E7D0D0;
   line-height:2.5;
   padding: 10px 20px;
   -webkit-transition: all 0.5s ease-in-out;
@@ -79,7 +77,7 @@ li{
     margin: 30px 0;
   }
   h1{
-    font-size: 3em;
+    line-height: 1.4em;
   }
   li{
     display: block;
