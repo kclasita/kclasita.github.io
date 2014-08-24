@@ -15,21 +15,21 @@
 
 
 /** Add/remove margins **/
-.push           { margin:       $line-height-computed; }
-.push--top      { margin-top:   $line-height-computed; }
-.push--right    { margin-right: $line-height-computed; }
-.push--bottom   { margin-bottom:$line-height-computed; }
-.push--left     { margin-left:  $line-height-computed; }
-.push--ends     { margin-top:   $line-height-computed; margin-bottom:$line-height-computed; }
-.push--sides    { margin-right: $line-height-computed; margin-left:  $line-height-computed; }
+.push           { margin:       20px; }
+.push--top      { margin-top:   20px; }
+.push--right    { margin-right: 20px; }
+.push--bottom   { margin-bottom:20px; }
+.push--left     { margin-left:  20px; }
+.push--ends     { margin-top:   20px; margin-bottom:20px; }
+.push--sides    { margin-right: 20px; margin-left:  20px; }
 
-.push-half          { margin:       $line-height-computed / 2; }
-.push-half--top     { margin-top:   $line-height-computed / 2; }
-.push-half--right   { margin-right: $line-height-computed / 2; }
-.push-half--bottom  { margin-bottom:$line-height-computed / 2; }
-.push-half--left    { margin-left:  $line-height-computed / 2; }
-.push-half--ends    { margin-top:   $line-height-computed / 2; margin-bottom:$line-height-computed / 2; }
-.push-half--sides   { margin-right: $line-height-computed / 2; margin-left:  $line-height-computed / 2; }
+.push-half          { margin:       10px; }
+.push-half--top     { margin-top:   10px; }
+.push-half--right   { margin-right: 10px; }
+.push-half--bottom  { margin-bottom:10px; }
+.push-half--left    { margin-left:  10px; }
+.push-half--ends    { margin-top:   10px; margin-bottom:10px; }
+.push-half--sides   { margin-right: 10px; margin-left:  10px; }
 
 .flush          { margin:       0; }
 .flush--top     { margin-top:   0; }
@@ -73,10 +73,7 @@
 }
 
 .center {
-  float:none;
-  display:inline-block;
-  vertical-align:middle;
-  margin-right:-4px;
+  display: block;
 }
 
 // Empty href attributes for UI Bootstrap

@@ -225,6 +225,93 @@ li{
     background: #f94848;
 }
 
+.work{
+  margin: 15px 0 40px;
+}
+
+.work__project{
+  margin-top: 60px;
+}
+.work__name{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.work__teaser{
+  font-size: 24px;
+  font-weight: 700;
+  text-align:center;
+  margin: 0 0 10px;
+}
+
+.btn{
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  line-height:2.5;
+  padding: 8px 15px;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn--mcf{
+  background-color: #cf454a;
+}
+
+.btn--mcf:hover{
+  background-color: #af3a43;
+}
+
+.btn--sundance{
+  background-color: #005397;
+}
+
+.btn--sundance:hover{
+  background-color: #00416d;
+}
+
+.btn--eta{
+  background-color: #54bab2;
+}
+
+.btn--eta:hover{
+  background-color: #409189;
+}
+
+.btn--logo{
+  background-color: #808080;
+}
+
+.btn--logo:hover{
+  background-color: #666;
+}
+
+.btn--chomp{
+  background-color: #333;
+}
+
+.btn--chomp:hover{
+  background-color: #555;
+}
+
+.btn--ssa{
+  background-color: #58b4cf;
+}
+
+.btn--ssa:hover{
+  background-color: #4994a5;
+}
+
 
 @media only screen and (max-width: 767px){
   .top-bar{
@@ -281,5 +368,8 @@ li{
     widht: 100%;
     text-align: center;
     margin-bottom: 10px;
+  }
+  .work__project {
+    margin-top: 15px;
   }
 }
