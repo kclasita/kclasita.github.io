@@ -1,56 +1,99 @@
 /*Body*/
 
 body{
+  color: #333333;
   background-color: #ededed;
-  font-family: 'AzbukaStd-Light';
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.landing{
-  margin: 60px 0;
+.container{
+  margin-top: 60px;
 }
 
+.description{
+  margin: 8px 0;
+  text-align: center;
+}
 
 h1{
-  font-size: 1.5em;
-  line-height: 2.2em;
-  color:#4e606a;
-  text-align: center;
-  margin-bottom: 5px;
+  font-size: 2.75em;
+  font-weight: 400;
+  color:#ff827c;
+  font-family: Courier, serif;
+}
+
+a:hover{
+  color: #969696;
 }
 
 h2{
-  color: #4e606a;
-  border: 10px solid #bf8e90;
-  max-width: 125px;
-  height: 122px;
-  padding-top: 28px;
-  text-align: center;
-  margin: auto;
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
-strong{
-  font-family: "AzbukaStd-Medium";
-  color: #e3a3a4;
+h2 a{
+  font-weight: 700;
+  color: #ff827c;
+  text-decoration: underline;
+  display: inline-block;
+  letter-spacing: 0.05em;
 }
 
-a{
+.divider--circle {
+  border-radius: 50%;
+	width: 8px;
+	height: 8px;
+  background-color: #ff827c;
+  margin: 25px auto;
+  position: relative;
+}
+
+.divider--circle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: -30px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ff827c;
+}
+
+.divider--circle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: 30px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ff827c;
+}
+
+p a{
+  display: inline-block;
+  color: #ff827c;
+  text-decoration: underline;
+  font-weight: 700;
+}
+/*a{
   color: #bf8e90;
   font-size: 14px;
   text-decoration: none;
   background-color:#E7D0D0;
   line-height:2.5;
   padding: 10px 20px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover{
   color: #fff;
   background-color: #bf8e90;
   padding: 10px 20px;
-}
+}*/
 
 ul{
   text-align: center;
@@ -72,19 +115,18 @@ li{
   background: #ccc; /* Firefox */
 }
 
-@media only screen and (max-width: 768px){
-  .landing{
-    margin: 30px 0;
+@media only screen and (max-width: 767px){
+  .container{
+    margin-top: 20px;
   }
   h1{
-    line-height: 1.4em;
+    font-size: 2em;
+    line-height: 1em;
   }
-  li{
-    display: block;
-    width: 100%;
-    margin: 10px 0;
+  h2{
+    font-size: 1.25em;
   }
-  a{
-    display: block;
+  .divider--circle {
+    margin: 10px auto;
   }
 }
