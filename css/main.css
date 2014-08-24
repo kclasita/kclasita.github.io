@@ -6,8 +6,29 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+p a{
+  color: #333;
+  text-decoration: underline;
+}
+
+p a:hover{
+  color: #ff827c;
+}
+
+h4{
+  color: #ff827c;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 .container{
-  margin-top: 100px;
+  margin: 100px 0 50px;
 }
 
 .headline{
@@ -51,10 +72,10 @@ h2 a{
 
 .divider--circle {
   border-radius: 50%;
-	width: 8px;
-	height: 8px;
+	width: 6px;
+	height: 6px;
   background-color: #ff827c;
-  margin: 25px auto;
+  margin: 20px auto;
   position: relative;
 }
 
@@ -63,8 +84,8 @@ h2 a{
   display: block;
   position: absolute;
   margin-left: -30px;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: #ff827c;
 }
@@ -74,36 +95,50 @@ h2 a{
   display: block;
   position: absolute;
   margin-left: 30px;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: #ff827c;
 }
 
-p a{
-  display: inline-block;
-  color: #ff827c;
-  text-decoration: underline;
-  font-weight: 700;
-}
-/*a{
-  color: #bf8e90;
+.social-link{
+  color: #fff;
   font-size: 14px;
   text-decoration: none;
-  background-color:#E7D0D0;
   line-height:2.5;
-  padding: 10px 20px;
+  padding: 8px 15px;
+  margin-right: 10px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-a:hover{
+.social-link--twitter{
+  background-color: #41b4d5;
+}
+
+.social-link--github{
+  background-color: #999;
+}
+
+.social-link--linkedin{
+  background-color: #007bb4;
+}
+
+.social-link--email{
+  background-color: #ff807c;
+}
+
+.social-link--blog{
+  background-color: #efc702;
+}
+
+.social-link:hover{
+  background-color: #333;
+  text-decoration: none;
   color: #fff;
-  background-color: #bf8e90;
-  padding: 10px 20px;
-}*/
+}
 
 ul{
   text-align: center;
@@ -190,6 +225,7 @@ li{
     background: #f94848;
 }
 
+
 @media only screen and (max-width: 767px){
   .top-bar{
     height: 70px;
@@ -239,5 +275,11 @@ li{
   }
   .divider--circle {
     margin: 10px auto;
+  }
+  .social-link{
+    display: block;
+    widht: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
