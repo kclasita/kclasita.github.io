@@ -5,44 +5,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Kristin Lasita User Interface Dev-signer</title>
+  <title>Kristin Lasita Product Designer</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/utilities.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <script src="external/jquery/jquery.js"></script>
+  <script src="jquery-ui.js"></script>
 </head>
 
 <body>
+  <nav class="top-bar">
+    <div class="row">
+      <div class="col-sm-12">
+        <a href="index.html" class="top-bar__home"> Kristin Lasita
+        <a class="top-bar__expand">
+          <i class="icon--hamburger">
+            <span class="line--horizontal"></span>
+            <span class="line--horizontal"></span>
+            <span class="line--horizontal"></span>
+          </i>
+        </a>
+        <ul class="top-bar__nav">
+          <li>
+            <a href="index.html" class="top-bar__link">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="top-bar__link">About</a>
+          </li>
+          <li>
+            <a href="mailto:hello@kristinlasita.com" class="top-bar__link">Say Hello</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
   <section class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h1 class="text--center flush--bottom">Hi, I'm Kristin.</h1>
+        <h1 class="headline">Hi, I'm Kristin.</h1>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="description">Product Designer + Front-End Developer</h2>
-        <h2 class="description">Working full-time for <a href="http://teamgaslight.com", target="_blank">Gaslight</a> in Cincinnati, Ohio</h2>
+        <h2 class="headline--description">Product Designer + Front-End Developer</h2>
+        <h2 class="headline--description">Working full-time for <a href="http://teamgaslight.com", target="_blank">Gaslight</a> in Cincinnati, Ohio</h2>
+        <p class="headline--callout">I balance time, beauty and function when I design and build an app.</p>
       </div>
     </div>
+
     <div class="row">
       <div class="col-sm-12">
         <div class="divider--circle"></div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm-12">
-        <p class="text--center">My goal balancing time, beauty and function when I design and build an app.</p>
-        <p class="text--center">I’m a <a href="http://dribbble.com/kclasita", target="_blank"> designer</a> , <a href="https://www.github.com/kclasita", target="_blank"> coder</a> , <a href="http://www.gaslight.co/blog?author=kclasita", target="_blank"> writer</a> , and <a href="https://www.twitter.com/kclasita", target="_blank">Twitter</a> user.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-12">
-      <p class="text--center">Feel free to email me <a href="mailto:kclasita@gmail.com">hello@kristinlasita.com</a> I kind of live on my computer. </p>
-      </div>
-    </div>
   </section>
+
+  <script>
+    $(function() {
+      return $('.top-bar__expand').on('click', function(event) {
+        return $('.top-bar').toggleClass('top-bar--expanded');
+      });
+    });
+  </script>
 </body>
 </html>
