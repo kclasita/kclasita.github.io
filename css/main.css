@@ -125,7 +125,7 @@ li{
   list-style: none;
   display: block;
   margin-right: 10px;
-  /*font-size: 16px;*/
+  font-size: 16px;
 }
 
 .project-list-link{
@@ -326,11 +326,11 @@ a .project__teaser{
 }
 
 .btn--chomp{
-  background-color: #333;
+  background-color: #b2cd3e;
 }
 
 .btn--chomp:hover{
-  background-color: #555;
+  background-color: #8c9b31;
 }
 
 .btn--ssa{
@@ -350,12 +350,37 @@ a .project__teaser{
 .project__description{
   margin-top: 5px;
 }
-.project__headline--eta {
+
+.project__headline {
   font-size: 16px;
   font-weight: bold;
-  color: #54bab2;
   margin-bottom: 0;
 }
+
+.project__headline--eta {
+  color: #54bab2;
+}
+
+.project__headline-mcf {
+  color: #cf454a;
+}
+
+.project__headline-sundance {
+  color: #005397;
+}
+
+.project__headline-logo {
+  color: #808080;
+}
+
+.project__headline-chomps {
+  color: #b2cd3e;
+}
+
+.project__headline-ssa {
+  color: #58b4cf;
+}
+
 
 .project-details{
   margin-top: 40px;
