@@ -224,21 +224,13 @@ li{
   margin: 15px 0 40px;
 }
 
-.number {
-  color: #aaa;
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  margin-bottom: 0;
-  font-family: Garamond,serif;
-  font-style: italic;
-}
 .project{
   margin-top: 60px;
+  padding: 10px 10px 20px;
 }
 
 .project:hover{
-  color: #ff827c;
+  text-decoration: none;
 }
 a .project__name{
   color: #333;
@@ -270,11 +262,6 @@ a .project__teaser{
   text-align:center;
   margin: 0;
 }
-
-/*a.project:hover {
-  color: #ff827c;
-  text-decoration: none;
-}*/
 
 .btn{
   color: #fff;
@@ -381,13 +368,27 @@ a .project__teaser{
   color: #58b4cf;
 }
 
-
 .project-details{
   margin-top: 40px;
 }
 
 .project-nav{
   margin-top: 60px;
+}
+
+.project-front-page{
+  margin-bottom: 40px;
+}
+.project-front-page:hover{
+  background-color: #ddd;
+  display: block;
+
+}
+
+.icon-front-page{
+  display: block;
+  width: 110px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 767px){
