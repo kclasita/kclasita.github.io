@@ -386,6 +386,10 @@ a .project__teaser{
   margin-top: 40px;
 }
 
+.project-nav{
+  margin-top: 60px;
+}
+
 @media only screen and (max-width: 767px){
   .top-bar{
     height: 70px;
