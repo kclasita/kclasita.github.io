@@ -370,6 +370,7 @@ a .project__teaser{
 
 .project-details{
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .project-nav{
@@ -383,6 +384,11 @@ a .project__teaser{
   background-color: #ddd;
   display: block;
 
+}
+
+.portfolio-picture{
+  width: 100%;
+  margin-top: 20px;
 }
 
 .icon-front-page{
