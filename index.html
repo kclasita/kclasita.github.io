@@ -1,124 +1,116 @@
-<!DOCTYPE html>
+<html>
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Kristin Lasita Product Designer</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/utilities.css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="jquery-ui.min.css">
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-  <script src="external/jquery/jquery.js"></script>
-  <script src="jquery-ui.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kristin Lasita Product Designer</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+  </head>
+
+  <body>
+    <nav class="top-bar">
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="index.html" class="top-bar__name">Kristin Lasita</a>
+          <div class="top-bar__title hidden-xs"> Product Designer + Front-End Developer</div>
+          <a class="top-bar__expand">
+            <i class="icon--hamburger">
+              <span class="line--horizontal"></span>
+              <span class="line--horizontal"></span>
+              <span class="line--horizontal"></span>
+            </i>
+          </a>
+          <ul class="top-bar__nav">
+            <li>
+              <a href="index.html" class="top-bar__link">Work</a>
+            </li>
+            <li>
+              <a href="about.html" class="top-bar__link">About</a>
+            </li>
+            <li>
+              <a href="mailto:hello@kristinlasita.com" class="top-bar__link">Say Hello</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <section class="work">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="project-front-page">
+              <a href="mcf.html" class="project">
+                <img class="icon-front-page" src="./img/mcf-icon.png">
+                <h2 class="project__teaser">Finding meaning on the internet.</h2>
+                <h3 class="project__name">Meaningful Content Fund</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-8 col-sm-offset-2 project-front-page">
+            <a href="sundance.html" class="project">
+              <img class="push-half--bottom icon-front-page" src="./img/sundance-icon.png">
+              <h2 class="project__teaser">Celebrating film around town.</h2>
+              <h3 class="project__name">Sundance Film Festival 2011</h3>
+            </a>
+          </div>
+
+          <div class="col-sm-8 col-sm-offset-2 project-front-page">
+            <a href="eta.html" class="project">
+              <img class="push-half--bottom icon-front-page" src="./img/eta-icon.png">
+              <h2 class="project__teaser">Reinventing arts for a new generation.</h2>
+              <h3 class="project__name">Enjoy the Arts</h3>
+            </a>
+          </div>
+
+          <div class="col-sm-8 col-sm-offset-2 project-front-page">
+            <a href="logo.html" class="project">
+              <img class="push-half--bottom icon-front-page" src="./img/logo-icon.png">
+              <h2 class="project__teaser">Giving a face to the business.</h2>
+              <h3 class="project__name">Identities</h3>
+            </a>
+          </div>
+
+          <div class="col-sm-8 col-sm-offset-2 project-front-page">
+            <a href="chomps.html" class="project">
+              <img class="push-half--bottom icon-front-page" src="./img/chomps-icon.png">
+              <h2 class="project__teaser">DIY paper toys with a bite.</h2>
+              <h3 class="project__name">Chomps</h3>
+            </a>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <script>
+      $(function() {
+        return $('.top-bar__expand').on('click', function(event) {
+          return $('.top-bar').toggleClass('top-bar--expanded');
+        });
+      });
+    </script>
+  </body>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-26603400-1', 'auto');
     ga('send', 'pageview');
 
   </script>
-</head>
-
-<body>
-  <nav class="top-bar">
-    <div class="row">
-      <div class="col-sm-12">
-        <a href="index.html" class="top-bar__name">Kristin Lasita</a>
-        <div class="top-bar__title hidden-xs"> Product Designer + Front-End Developer</div>
-        <a class="top-bar__expand">
-          <i class="icon--hamburger">
-            <span class="line--horizontal"></span>
-            <span class="line--horizontal"></span>
-            <span class="line--horizontal"></span>
-          </i>
-        </a>
-        <ul class="top-bar__nav">
-          <li>
-            <a href="index.html" class="top-bar__link">Work</a>
-          </li>
-          <li>
-            <a href="about.html" class="top-bar__link">About</a>
-          </li>
-          <li>
-            <a href="mailto:hello@kristinlasita.com" class="top-bar__link">Say Hello</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container">
-
-    <section class="work">
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="project-front-page">
-            <a href="mcf.html" class="project">
-              <img class="icon-front-page" src="./img/mcf-icon.png">
-              <h2 class="project__teaser">Finding meaning on the internet.</h2>
-              <h3 class="project__name">Meaningful Content Fund</h3>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-sm-8 col-sm-offset-2 project-front-page">
-          <a href="sundance.html" class="project">
-            <img class="push-half--bottom icon-front-page" src="./img/sundance-icon.png">
-            <h2 class="project__teaser">Celebrating film around town.</h2>
-            <h3 class="project__name">Sundance Film Festival 2011</h3>
-          </a>
-        </div>
-
-        <div class="col-sm-8 col-sm-offset-2 project-front-page">
-          <a href="eta.html" class="project">
-            <img class="push-half--bottom icon-front-page" src="./img/eta-icon.png">
-            <h2 class="project__teaser">Reinventing arts for a new generation.</h2>
-            <h3 class="project__name">Enjoy the Arts</h3>
-          </a>
-        </div>
-
-        <div class="col-sm-8 col-sm-offset-2 project-front-page">
-          <a href="logo.html" class="project">
-            <img class="push-half--bottom icon-front-page" src="./img/logo-icon.png">
-            <h2 class="project__teaser">Giving a face to the business.</h2>
-            <h3 class="project__name">Identities</h3>
-          </a>
-        </div>
-
-        <div class="col-sm-8 col-sm-offset-2 project-front-page">
-          <a href="chomps.html" class="project">
-            <img class="push-half--bottom icon-front-page" src="./img/chomps-icon.png">
-            <h2 class="project__teaser">DIY paper toys with a bite.</h2>
-            <h3 class="project__name">Chomps</h3>
-          </a>
-        </div>
-
-        <!-- <div class="col-sm-8 col-sm-offset-2 push--bottom">
-          <h4 class="number">Project 06</h4>
-          <a href="chomps.html" class="project">
-            <h2 class="project__teaser">Finding new homes for old treasures.</h2>
-            <h3 class="project__name">Second Story Auctions</h3>
-          </a>
-        </div> -->
-
-      </div>
-    </section>
-  </div>
-
-  <script>
-    $(function() {
-      return $('.top-bar__expand').on('click', function(event) {
-        return $('.top-bar').toggleClass('top-bar--expanded');
-      });
-    });
-  </script>
-</body>
 </html>
