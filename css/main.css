@@ -401,6 +401,13 @@ a .project__teaser{
   margin: 0 auto;
 }
 
+.divider{
+  margin-top: 38px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px dotted #ccc
+}
+
 @media only screen and (max-width: 767px){
   .top-bar{
     height: 70px;
