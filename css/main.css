@@ -391,6 +391,10 @@ a .project__teaser{
   margin-top: 20px;
 }
 
+.portfolio-picture--border{
+  border: 1px solid #ddd;
+}
+
 .icon-front-page{
   display: block;
   width: 110px;
