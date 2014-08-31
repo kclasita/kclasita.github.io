@@ -493,4 +493,8 @@ a .project__teaser{
   .btn{
     display: block;
   }
+
+  .divider {
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
