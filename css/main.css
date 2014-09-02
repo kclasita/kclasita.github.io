@@ -328,6 +328,14 @@ a .project__teaser{
   background-color: #4994a5;
 }
 
+.btn--gaslight{
+  background-color: #f1d618;
+}
+
+.btn--gaslight:hover{
+  background-color: #dbbf19;
+}
+
 .project__divider {
   margin-top: 5px;
   padding-right: 30px;
@@ -368,6 +376,10 @@ a .project__teaser{
   color: #58b4cf;
 }
 
+.project__headline-gaslight {
+  color: #dbbf19;
+}
+
 .project-details{
   margin-top: 40px;
   margin-bottom: 40px;
@@ -380,6 +392,7 @@ a .project__teaser{
 .project-front-page{
   margin-bottom: 40px;
 }
+
 .project-front-page:hover{
   background-color: #ddd;
   display: block;
