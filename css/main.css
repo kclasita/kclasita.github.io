@@ -47,37 +47,6 @@ h2 a{
   letter-spacing: 0.05em;
 }
 
-.divider--circle {
-  border-radius: 50%;
-	width: 6px;
-	height: 6px;
-  background-color: #ff827c;
-  margin: 20px auto;
-  position: relative;
-}
-
-.divider--circle:before {
-  content: "";
-  display: block;
-  position: absolute;
-  margin-left: -30px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #ff827c;
-}
-
-.divider--circle:after {
-  content: "";
-  display: block;
-  position: absolute;
-  margin-left: 30px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #ff827c;
-}
-
 .social-link{
   color: #333;
   background-color: #ddd;
@@ -226,12 +195,34 @@ li{
 
 .project{
   margin-top: 60px;
-  padding: 10px 10px 20px;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .project:hover{
   text-decoration: none;
 }
+
+.homepage-background{
+  height: 100%;
+  padding: 20px 10px;
+  margin-bottom: 40px;
+}
+
+.project-img{
+  height: 300px;
+  overflow: hidden;
+  border-radius: 0.1em;
+  border: 1px solid #ddd;
+}
+
+.project:hover{
+  opacity: 0.75;
+}
+
 a .project__name{
   color: #333;
   font-size: 16px;
@@ -510,4 +501,12 @@ a .project__teaser{
   .divider {
     margin-top: 20px;
     margin-bottom: 0px;
+  }
+  .project-img{
+    height: 200px;
+  }
+
+  .homepage-background{
+    margin-bottom: 20px;
+  }
 }
