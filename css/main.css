@@ -31,7 +31,7 @@ a span {
 }
 
 .container{
-  margin-top: 65px;
+  margin: 65px auto;
 }
 
 .heading-image{
@@ -46,9 +46,34 @@ a span {
   background: #92E8C3;
 }
 
+hr {
+  border-top: 1px solid #ddd;
+}
+
+.writing h3{
+  font-size: 1.75em;
+  color: #4CC090;
+  font-weight: normal;
+  margin-bottom: 0;
+  max-width: 550px;
+}
+
+.writing p{
+  margin: 0 0 10px;
+  font-size: 1.25em;
+}
+
+.writing a{
+  color: #4CC090;
+}
+
 @media only screen and (max-width: 767px){
   h1, h2{
     font-size: 2.25em;
+  }
+
+  .writing h3{
+    font-size: 1.5em;
   }
 
   p{
