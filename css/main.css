@@ -35,7 +35,7 @@ a span {
 }
 
 .heading-image{
-  width: 40px;
+  width: 60px;
   margin-bottom: 20px;
 }
 
@@ -67,6 +67,55 @@ hr {
   color: #4CC090;
 }
 
+
+#Left_Eye{
+  transform-origin: 10% 50% 0;
+  -webkit-transform-origin: 10% 50% 0;
+  animation: blink 4s linear infinite;
+  -webkit-animation: blink 4s linear infinite;
+}
+
+#Right_Eye{
+  transform-origin: 10% 50% 0;
+  -webkit-transform-origin: 10% 50% 0;
+  animation: blink 4s linear infinite;
+  -webkit-animation: blink 4s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    transform: scaleY(1); }
+
+  46% {
+    transform: scaleY(1); }
+
+  50% {
+    transform: translateY(145px) scaleY(0.1); }
+
+  54% {
+    transform: scaleY(1); }
+
+  100% {
+    transform: scaleY(1); }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scaleY(1); }
+
+  46% {
+    -webkit-transform: scaleY(1); }
+
+  50% {
+    -webkit-transform: scaleY(0.1); }
+
+  54% {
+    -webkit-transform: scaleY(1); }
+
+  100% {
+    -webkit-transform: scaleY(1); }
+}
+
 @media only screen and (max-width: 767px){
   h1, h2{
     font-size: 2.25em;
@@ -82,5 +131,6 @@ hr {
 
   .heading-image{
     margin-bottom: 10px;
+    width: 40px;
   }
 }
