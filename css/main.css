@@ -117,8 +117,12 @@ hr {
 }
 
 @media only screen and (max-width: 767px){
+  .container{
+    margin: 35px auto;
+  }
+
   h1, h2{
-    font-size: 2.25em;
+    font-size: 2em;
   }
 
   .writing h3{
