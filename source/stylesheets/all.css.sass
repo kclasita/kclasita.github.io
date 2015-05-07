@@ -1,0 +1,128 @@
+/* @charset "utf-8" */
+$light-pink: #EDBBBB
+
+html, body
+  height: 100%
+  min-height: 100%
+  margin: 0
+  padding: 0
+  background-color: #fefefe
+
+svg
+  width: 30px
+  margin: auto
+  display: block
+
+h1
+  color: white
+  font-size: 36px
+  font-family: 'Oswald', sans-serif
+  text-transform: uppercase
+  text-align: center
+  letter-spacing: 0.35em
+  width: 100%
+  margin: 0
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+
+h2
+  font-family: 'Lora', serif
+  text-align: center
+  margin: 0
+  font-weight: 100
+  font-size: 18px
+
+p
+  text-align: center
+  line-height: 1.6em
+  font-size: 14px
+
+a
+  color: #000
+  text-decoration: underline
+
+.content--center
+  width: 50%
+  margin: 0 auto
+  display: table-cell
+  vertical-align: middle
+.footer
+  position: absolute
+  display: block
+  bottom: 30px
+
+.flex-container
+  height: 100%
+  min-height: 100%
+  padding: 0
+  margin: 0
+  list-style: none
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+
+.flex-left, .flex-right
+  padding: 10px
+  width: 50%
+  margin: 20px
+
+.flex-left
+  background: $light-pink
+
+.flex-right
+  overflow: scroll
+
+#Left_Eye
+  transform-origin: 10% 50% 0
+  -webkit-transform-origin: 10% 50% 0
+  animation: blink 4s linear infinite
+  -webkit-animation: blink 4s linear infinite
+
+
+#Right_Eye
+  transform-origin: 10% 50% 0
+  -webkit-transform-origin: 10% 50% 0
+  animation: blink 4s linear infinite
+  -webkit-animation: blink 4s linear infinite
+
+
+@keyframes blink
+  0%
+    transform: scaleY(1)
+
+  46%
+    transform: scaleY(1)
+
+  50%
+    transform: translateY(145px) scaleY(0.1)
+
+  54%
+    transform: scaleY(1)
+
+  100%
+    transform: scaleY(1)
+
+
+@-webkit-keyframes blink
+  0%
+    -webkit-transform: scaleY(1)
+
+  46%
+    -webkit-transform: scaleY(1)
+
+  50%
+    -webkit-transform: scaleY(0.1)
+
+  54%
+    -webkit-transform: scaleY(1)
+
+  100%
+    -webkit-transform: scaleY(1)
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+  .flex-container
+    display: block
+
+  .flex-left, .flex-right
+    width: 100%
+    margin: 0
+    padding: 0
