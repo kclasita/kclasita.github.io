@@ -4,9 +4,19 @@ body{
   font-family: 'EB Garamond', serif;
 }
 
-h1, h2{
-  font-weight: normal;
-  font-size: 2.5em;
+h1, p.front-page{
+  font-weight: 100;
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 30px;
+  max-width: 750px;
+}
+
+
+h2{
+  font-weight: 200;
+  font-size: 22px;
+  font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
 }
 
@@ -18,13 +28,14 @@ h4{
 }
 
 p{
-  font-size: 1.5em;
-  max-width: 525px;
+  max-width: 750px;
+
+
 }
 
 a {
-  text-decoration: underline;
-  color: #aaa;
+  text-decoration: none;
+  color: blue;
 }
 
 
@@ -52,8 +63,8 @@ ol {
   font-size: 1.25em;
 }
 
-.container{
-  margin: 65px auto;
+.contain{
+  margin: 65px
 }
 
 .heading-image{
@@ -73,21 +84,30 @@ hr {
 }
 
 .writing h3{
-  font-size: 1.75em;
+  font-size: 1.25em;
   color: #4CC090;
   font-weight: normal;
   margin-bottom: 0;
   max-width: 550px;
 }
 
-.writing p{
-  margin: 0 0 10px;
-  font-size: 1.25em;
+.writing h1{
+  margin-bottom: 0;
 }
 
-.writing a{
-  color: #4CC090;
+
+.writing p{
+  margin: 0 0 40px;
+  line-height: 1.8em;
+  max-width: 600px;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: 'Helvetica Neue', sans-serif
 }
+
+/* .writing a{
+  color: #4CC090;
+} */
 
 
 #Left_Eye{
@@ -139,13 +159,13 @@ hr {
 }
 
 @media only screen and (max-width: 767px){
-  .container{
-    margin: 35px auto;
+  .contain{
+    margin: 20px;
   }
 
-  h1, h2{
-    font-size: 2em;
-  }
+/*   h1, h2{
+  font-size: 2em;
+} */
 
   .writing h3{
     font-size: 1.5em;
