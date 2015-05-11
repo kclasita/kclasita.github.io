@@ -2,22 +2,33 @@ body{
   color: #403E51;
   background-color: #F5F5F5;
   font-family: 'EB Garamond', serif;
+  font-weight: 100;
 }
 
-h1, p.front-page{
+h1 {
   font-weight: 100;
   font-size: 32px;
+  line-height: 1.45em;
   margin: 0;
   margin-bottom: 30px;
   max-width: 750px;
 }
 
+h1 span {
+  font-weight: bold;
+}
 
-h2{
-  font-weight: 200;
-  font-size: 22px;
-  font-family: 'Helvetica Neue', sans-serif;
-  margin: 0;
+h1 a {
+  font-style: italic;
+  letter-sapcing: 0.01em;
+  transition: all 0.35s;
+}
+
+
+h2 {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 0;
 }
 
 h4{
@@ -33,9 +44,15 @@ p{
 
 }
 
-a {
+h1 a {
   text-decoration: none;
   color: blue;
+}
+
+a {
+  text-decoration: none;
+  color: #403E51;
+  line-height: 1.4em;
 }
 
 
@@ -63,8 +80,21 @@ ol {
   font-size: 1.25em;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 5px 0;
+}
+
+li {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
 .contain{
-  margin: 65px
+  margin: 65px;
+  max-width: 800px;
 }
 
 .heading-image{
@@ -109,6 +139,34 @@ hr {
   color: #4CC090;
 } */
 
+.background-circle {
+  fill: #14DC8A;
+  transition: all 0.5s;
+}
+
+svg:hover .background-circle {
+  fill: blue;
+}
+
+.smile {
+  transition: all 0.35s;
+  transform:rotate(0deg);
+	transform-origin:50% 50%;
+	-ms-transform:rotate(0deg);
+	-ms-transform-origin:50% 50%;
+	-webkit-transform:rotate(0deg);
+	-webkit-transform-origin:50% 50%;
+
+}
+svg:hover .smile {
+  transform: rotate(180deg);
+  transform-origin: 100% 100%;
+  -ms-transform:rotate(180deg);
+  -ms-transform-origin:50% 50%;
+  -webkit-transform:rotate(180deg);
+  -webkit-transform-origin:50% 50%;
+
+}
 
 #Left_Eye{
   transform-origin: 10% 50% 0;
@@ -158,14 +216,27 @@ hr {
     -webkit-transform: scaleY(1); }
 }
 
+.skill{
+  width: 31%;
+  float: left;
+  clear: clear;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 767px){
   .contain{
     margin: 20px;
   }
 
-/*   h1, h2{
-  font-size: 2em;
-} */
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  h1 a{
+    font-size: 32px;
+  }
+
 
   .writing h3{
     font-size: 1.5em;
@@ -179,4 +250,17 @@ hr {
     margin-bottom: 10px;
     width: 40px;
   }
+
+  .skill{
+    width: 100%;
+    float: left;
+    clear: clear;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  h2, a{
+    font-size: 18px;
+  }
+
 }
