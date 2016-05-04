@@ -16,9 +16,8 @@ h1 {
 
 
 h1 a {
-
   letter-sapcing: 0.01em;
-  transition: all 0.35s;
+  transition: all 0.30s;
 }
 
 
@@ -47,8 +46,9 @@ h1 a {
 
 a {
   text-decoration: none;
-  color: #403E51;
+  color: blue;
   line-height: 1.4em;
+  transition: all 0.30s;
 }
 
 
